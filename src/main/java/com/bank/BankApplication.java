@@ -1,13 +1,13 @@
-package com.bank.springsecuritybasic;
+package com.bank;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringsecuritybasicApplication {
+public class BankApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringsecuritybasicApplication.class, args);
+		SpringApplication.run(BankApplication.class, args);
 	}
 
 }
