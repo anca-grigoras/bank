@@ -13,9 +13,20 @@ create table users(
 create table authorities(
     id int not null auto_increment,
     username varchar(45) not null,
-    password varchar(45) not null,
+    authority varchar(45) not null,
     primary key (id)
 );
 
-insert ignore into users values (null, 'happy', '12345', '1');
-insert ignore into authorities values (null, 'happy', 'write');
+INSERT ignore INTO users values (NULL, 'happy', '12345', '1');
+INSERT ignore INTO authorities values (NULL, 'happy', 'write');
+
+CREATE TABLE `customer`(
+  `id` int NOT NULL AUTO_INCREMENT,
+  `email` varchar(45) NOT NULL,
+  `pwd` varchar(200) NOT NULL,
+  `role` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+);
+
+INSERT INTO `customer` (`email`, `pwd`, `role`)
+ VALUES ('johndoe@example.com', '54321', 'admin');
